@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+}
+
+#search {
+    width: 95vw;
+    margin: auto;
+}
+
+#searchText {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 1.8em;
+}
+
+#searchSpan {
+    color: #8c8c8c;
+}
+
+.blue {
+    color: #2f2fe9;
+}
+
+#shots {
+    float: right;
+    margin: 20px 0;
+    color: #8c8c8c;
+}
+
+#resultText {
+    clear: left;
+    color: #8c8c8c;
+    width: 50%;
+}
+
+#resultSpan {
+    color: #000;
+}
+
+#latest {
+    color: #8c8c8c;
+    float: right;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+	#searchText {
+		text-align: center;
+		display: block;
+	}
+	
+	#shots {
+		float: none;
+		text-align: center;
+	}
+	
+	#resultText {
+		text-align: center;
+		width: 100%;
+	}
+	
+	#latest {
+		float: none;
+		text-align: center;
+	}
+}
+

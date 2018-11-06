@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1">
+	<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+	<link rel="stylesheet" type="text/css" href="modal.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+	<header id='header'>
+
+		<ul id='navbar'>
+			<li id="logo"><a href="#">Logo</a></li>
+			<li id="btn"><a href="#" id="button"><i class="fas fa-bars"></i></a></li>
+			<li class="link"><a href="#" class="third">Shots</a></li>
+			<li class="link "><a href="#">Designers</a></li>
+			<li class="link"><a href="#">Teams</a></li>
+			<li class="link"><a href="#">Jobs</a></li>
+			<li class="link"><a href="#"><i class="fas fa-ellipsis-h fa-lg"></i></a></li>
+		</ul>
+
+	</header>
+
+	<section id='search'>
+
+		<h3 id='searchText'><span id='searchSpan'>Search /</span> websites</h3>
+
+		<h4 id='shots'>shots tagged <span class='blue'>websites</span></h4>
+
+		<h4 id='resultText'>Shot results for <span id='resultSpan'>websites</span></h4>
+
+		<h4 id='latest'>Latest</h4>
+	</section> <br> <br>
+	
+	<section id="flex">
+
+		<div class='card'>
+
+			<img src="slike/prva.jpg" alt="Avatar" onclick="openModal();currentSlide(1)" style="width:100%">
+			<div class="container">
+				<i class="fas fa-paperclip" id='paperclip'></i>
+				<i class="fas fa-eye" id='eye'>18</i>
+				<i class="fas fa-comment" id="comment">7</i>
+				<i class="fas fa-heart" id="heart">4</i>
+			</div>
+
+		</div>
+
+		<div class='card'>
+
+			<img src="slike/druga.jpg" alt="Avatar" onclick="openModal();currentSlide(2)" style="width:100%">
+			<div class="container">
+				<i class="fas fa-paperclip" id='paperclip'></i>
+				<i class="fas fa-eye" id='eye'>3</i>
+				<i class="fas fa-comment" id="comment">0</i>
+				<i class="fas fa-heart" id="heart">0</i>
+			</div>
+
+		</div>
+
+		<div class='card'>
+
+			<img src="slike/treca.jpg" alt="Avatar" onclick="openModal();currentSlide(3)" style="width:100%">
+			<div class="container">
+				<i class="fas fa-paperclip" id='paperclip'></i>
+				<i class="fas fa-eye" id='eye'>18</i>
+				<i class="fas fa-comment" id="comment">10</i>
+				<i class="fas fa-heart" id="heart">3</i>
+			</div>
+
+		</div>
+
+		<div class='card'>
+
+			<img src="slike/cetvrta.jpg" alt="Avatar" onclick="openModal();currentSlide(4)" style="width:100%">
+			<div class="container">
+				<i class="fas fa-paperclip" id='paperclip'></i>
+				<i class="fas fa-eye" id='eye'>6</i>
+				<i class="fas fa-comment" id="comment">14</i>
+				<i class="fas fa-heart" id="heart">4</i>
+			</div>
+
+		</div>
+
+		<div class='card'>
+
+			<img src="slike/peta.jpg" alt="Avatar" onclick="openModal();currentSlide(5)" style="width:100%">
+			<div class="container">
+				<i class="fas fa-paperclip" id='paperclip'></i>
+				<i class="fas fa-eye" id='eye'>5</i>
+				<i class="fas fa-comment" id="comment">0</i>
+				<i class="fas fa-heart" id="heart">3</i>
+			</div>
+
+		</div>
+
+		<div class='card'>
+
+			<img src="slike/sesta.jpg" alt="Avatar" onclick="openModal();currentSlide(6)" style="width:100%">
+			<div class="container">
+				<i class="fas fa-paperclip" id='paperclip'></i>
+				<i class="fas fa-eye" id='eye'>8</i>
+				<i class="fas fa-comment" id="comment">7</i>
+				<i class="fas fa-heart" id="heart">14</i>
+			</div>
+
+		</div>
+
+	</section>
+
+	<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+				<img src="slike/prva.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+				<img src="slike/druga.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+				<img src="slike/treca.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+				<img src="slike/cetvrta.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+				<img src="slike/peta.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+				<img src="slike/sesta.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
+
+
+			<div class="column">
+				<img class="demo cursor" src="slike/prva.jpg" style="width:100%" onclick="currentSlide(1)" alt="Forza Football">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="slike/druga.jpg" style="width:100%" onclick="currentSlide(2)" alt="Coocon">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="slike/treca.jpg" style="width:100%" onclick="currentSlide(3)" alt="Philadelphia">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="slike/cetvrta.jpg" style="width:100%" onclick="currentSlide(4)" alt="History of football">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="slike/peta.jpg" style="width:100%" onclick="currentSlide(5)" alt="Space App">
+			</div>
+			<div class="column">
+				<img class="demo cursor" src="slike/sesta.jpg" style="width:100%" onclick="currentSlide(6)" alt="Jorgensen">
+			</div>
+		</div>
+	</div>
+
+	<script src='navbar.js'></script>
+	<script src='modal.js'></script>
+</body>
+
+</html>
